@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000011, #000044);
+    color: #ffffff;
+}
+header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+h2 {
+    color: #ffffaa;
+}
+p {
+    line-height: 1.6;
+}
+.planet {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.planet img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Анимация для звезд */
+@keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    animation: twinkle 2s infinite;
+}
+
+.hero {
+    background-image: url('zvezdy_nebo_kosmos_113629_1920x1080.jpg'); /* Replace with your coffee beans image */
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.play-button {
+    display: inline-block;
+    background-color: #5b47cc; 
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
